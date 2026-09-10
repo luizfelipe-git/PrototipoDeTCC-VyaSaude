@@ -11,17 +11,15 @@ O sistema permite:
 - Visualização em Dashboards
 - Controle de usuários através de níveis de acesso
 
-
 ## :handshake: Integrantes
 | Integrantes     | GitHub | Linkedin |
 | --------------- | ------ | -------- |
-| Anselmo Santana |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/anselmosc)        |   [<img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" width="25" height="25"/>](https://www.linkedin.com/in/anselmo-santana-9014b151/)   |
-| Daniel Henrique |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/daniellamorim)    |   <img src="https://cdn-icons-png.flaticon.com/128/10092/10092249.png" width="25" height="25"/>   |
-| João Pedro      |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/Jotaramalho)      |   <img src="https://cdn-icons-png.flaticon.com/128/10092/10092249.png" width="25" height="25"/>   |
-| José Augusto    |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/Augusto-jabonif)  |   [<img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" width="25" height="25"/>](https://www.linkedin.com/in/jose-augusto-bonifacio-tributos-tax/)   |
-| Luiz Felipe     |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/luizfelipe-gif)   |   [<img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" width="25" height="25"/>](https://www.linkedin.com/in/luizfr89/)   |
-| Raul Tomaz      |  [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=20" />](https://github.com/raulcommits)      |   [<img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" width="25" height="25"/>](https://www.linkedin.com/in/raultm249/)   |
-
+| Anselmo Santana |  <div align="center"> <a href="https://github.com/anselmosc"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>        |   <div align="center"> <a href="https://www.linkedin.com/in/anselmo-santana-9014b151/"> <img src="https://api.iconify.design/skill-icons/linkedin.svg?height=30"/> </a> </div>  |
+| Daniel Henrique |  <div align="center"> <a href="https://github.com/daniellamorim"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>    |   <div align="center"> <a href=""> <img src="https://api.iconify.design/bi/linkedin.svg?height=30&color=%23666666"/> </a> </div>  |
+| João Pedro      |  <div align="center"> <a href="https://github.com/Jotaramalho"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>      |   <div align="center"> <a href=""> <img src="https://api.iconify.design/bi/linkedin.svg?height=30&color=%23666666"/> </a> </div>  |
+| José Augusto    |  <div align="center"> <a href="https://github.com/Augusto-jabonif"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>  |   <div align="center"> <a href="https://www.linkedin.com/in/jose-augusto-bonifacio-tributos-tax"> <img src="https://api.iconify.design/skill-icons/linkedin.svg?height=30"/> </a> </div>   |
+| Luiz Felipe     |  <div align="center"> <a href="https://github.com/luizfelipe-git"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>   |   <div align="center"> <a href="https://www.linkedin.com/in/luizfr89/"> <img src="https://api.iconify.design/skill-icons/linkedin.svg?height=30"/> </a> </div>  |
+| Raul Tomaz      |  <div align="center"> <a href="https://github.com/raulcommits"> <img src="https://api.iconify.design/skill-icons/github-dark.svg?height=30"/>      |   <div align="center"> <a href="https://www.linkedin.com/in/raultm249"> <img src="https://api.iconify.design/skill-icons/linkedin.svg?height=30"/> </a> </div>  |
 
 ## <img src="https://cdn-icons-png.flaticon.com/128/386/386986.png" width="25" height="25" /> Tipos de usuários:
 
@@ -40,23 +38,42 @@ O sistema permite:
 ### Paciente
 - Usuários padrão do sistema, onde podem consultar seus dados, solicitar algumas alterações, e verificar histórico de consultas.
   
-
+---
 ## :mag: Ferramentas Utilizadas
 
-| [<img src="https://cdn.simpleicons.org/github/ffffff?viewbox=auto&size=25" />](https://github.com/LitoMore/simple-icons-cdn) | Tecnologias |
-| ------------  | -- |
-| <img src="https://cdn.simpleicons.org/react?viewbox=auto&size=30"/>             | React |
-| <img src="https://www.svgrepo.com/show/374167/vite.svg" width="30" height="30" />             | Vite |
-| <img src="https://cdn.simpleicons.org/javascript?viewbox=auto&size=30"/>             | JavaScript |
-| <img src="https://cdn.simpleicons.org/mui?viewbox=auto&size=25"/>    | MaterialsUI |
-| <img src="https://cdn.simpleicons.org/bootstrap?viewbox=auto&size=25"/>            | Bootstrap |
-| <img src="https://img.icons8.com/color/452/java-web-token.png" width="35" height="35"/>            | JSON Web Token |
-| <img src="https://user-images.githubusercontent.com/5574267/54994574-df4c1380-4fc4-11e9-8509-1d3aedbc7b96.png" width="70" height="70"/>            | Toastify |
-| <img src="https://cdn.simpleicons.org/reactrouter?viewbox=auto&size=25"/>            | React-router-dom |
-| <img src="https://cdn.simpleicons.org/node.js?viewbox=auto&size=30"/>           | NodeJS |
-| <img src="https://cdn.simpleicons.org/express/ffffff?viewbox=auto&size=20"/>          | ExpressJS |
-| <img src="https://cdn.simpleicons.org/axios?viewbox=auto&size=25"/>  | Axios |
-| <img src="https://cdn.simpleicons.org/mysql?viewbox=auto&size=30"/>            | MySQL |
-</br>
+### :art: Frontend
+<div>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,vite,js,mui,bootstrap"/>
+  </a>&nbsp;
+  <img width="22%" src="https://user-images.githubusercontent.com/5574267/54994574-df4c1380-4fc4-11e9-8509-1d3aedbc7b96.png"/> 
+</div>
+
+### :gear: Backend
+<div>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,nodejs,express"/>
+  </a>
+    <img src="https://api.iconify.design/logos/jwt-icon.svg?color=%239B1718&height=45"/> 
+    <img src="https://api.iconify.design/logos/react-router.svg?color=%239B1718&height=45"/> 
+    <img src="https://api.iconify.design/thesvg-color/axios.svg?color=%239B1718&height=45"/> 
+</div>
+
+### :book: Banco de dados
+<div>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=mysql"/>
+  </a>
+    <img src="https://api.iconify.design/simple-icons/clevercloud.svg?color=%239B1718&height=45"/>
+</div>
+
+### :hammer_and_wrench: Ferramentas
+<div>
+   <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=figma,git,github,vscode"/>
+  </a>
+  <img src="https://api.iconify.design/logos/insomnia.svg?height=45"/> 
+</div>
+
 
 ## :gear: Instalação e Utilização
