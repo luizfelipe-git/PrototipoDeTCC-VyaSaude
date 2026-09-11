@@ -1,7 +1,7 @@
 {
   "name": "vyasaude",
   "private": true,
-  "version": "4.9.6",
+  "version": "4.11.0",
   "description": "Front-end do Projeto de TCC",
   "type": "module",
   "scripts": {
@@ -9,9 +9,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npm install && npm audit fix && code . && start cmder /m && npm run dev"
+    "start": "bun i && bun audit fix && code . && start cmder /m && bun run dev",
+    "dev:local": "cross-env NODE_ENV=local nodemon --env-file=.env.local -r dotenv/config src/index.js",
+    "dev:cloud": "cross-env NODE_ENV=production nodemon --env-file=.env.prod -r dotenv/config src/index.js",
+    "postinstall": "cd api && npm install"
   },
-  "author": "Luiz & Daniel",
+  "author": "luizfelipe-git",
   "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.14.0",
