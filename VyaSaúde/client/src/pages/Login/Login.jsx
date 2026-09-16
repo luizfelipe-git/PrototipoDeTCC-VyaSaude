@@ -1,6 +1,6 @@
 import '../../App.css';
 import './Login.css';
-import api from '../../services/api';
+import api from '../../services/api.js';
 import { Form } from 'react-bootstrap';
 import { IoPerson } from "react-icons/io5";
 import { IoLockClosed } from "react-icons/io5";

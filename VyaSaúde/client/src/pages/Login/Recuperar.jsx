@@ -1,9 +1,10 @@
-import '../../App.css'
-import './Login.css'
-import api from '../../services/api';
+import '../../App.css';
+import './Login.css';
+import api from '../../services/api.js';
 import { Form } from 'react-bootstrap';
 import { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 function Recuperar() {
    const navigate = useNavigate();
