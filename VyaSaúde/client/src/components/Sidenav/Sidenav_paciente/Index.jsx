@@ -1,15 +1,9 @@
-import '../../Sidenav/Index.css'
+import '../../Sidenav/Index.css';
 import { Link } from "react-router-dom";
 
 import UserManagerIcon from '../iconsSideBar/UserManagerIcon.png';
-import ClosePane       from '../iconsSideBar/Close Pane.png';
-import configIcon      from '../iconsSideBar/configIcon.png';
 import dashIcon        from '../iconsSideBar/dashIcon.png';
-import dbIcon          from '../iconsSideBar/dbIcon.png';
-import HomeAddress     from '../iconsSideBar/Home Address.png';
-import OrgManagericon  from '../iconsSideBar/OrgManagericon.png';
 import query           from '../iconsSideBar/query.png';
-import AddUserMale     from '../iconsSideBar/Add User Male.png';
 import home            from '../iconsSideBar/Home.png';
 
 // Página Inicial
