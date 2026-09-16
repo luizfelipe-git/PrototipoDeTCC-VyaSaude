@@ -1,8 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Componentes
-
-
 // Rotas de Login
 import Login                  from '../pages/login/Login.jsx';
 import Recuperar              from '../pages/login/Recuperar.jsx';
@@ -15,7 +12,7 @@ import Agente_novoPaciente    from '../pages/agente/Agente_novo-paciente.jsx';
 import Agente_alterarPaciente from '../pages/agente/Agente_alterar-paciente.jsx';
 
 // Rotas de Paciente
-import Paciente_home          from '../pages/paciente/Paciente_home'
+import Paciente_home          from '../pages/paciente/Paciente_home';
 
 
 export default function AppRoutes() {

@@ -1,6 +1,5 @@
-import React from "react";
-import Header from "../../components/Header/Header";
-import Sidenav from "../../components/Sidenav/Sidenav"
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav.jsx";
 
 function Agente_alterarPaciente() {
    return(

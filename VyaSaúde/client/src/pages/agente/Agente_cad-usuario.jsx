@@ -1,19 +1,19 @@
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
-import api from '../../services/api';
-import cboData from './../../data/cbo2002_KeyedJson.json';
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import api from '../../services/api.js';
+import cboData from '../../data/cbo2002_KeyedJson.json';
 import { useNavigate  } from "react-router-dom";
 import { useEffect, useState, useMemo } from 'react';
-import { useVerificarCEP } from '../../hooks/useVerificarCEP';
+import { useVerificarCEP } from '../../hooks/useVerificarCEP.js';
 import { TextField, Select, MenuItem, FormControl, InputLabel, ListSubheader, Switch, Autocomplete } from "@mui/material";
 import { PatternFormat } from 'react-number-format';
 // import { Button } from 'react-bootstrap';
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import { GoReply } from "react-icons/go";
