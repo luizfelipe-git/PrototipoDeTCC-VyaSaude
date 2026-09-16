@@ -4,18 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 // Rotas de Login
-import Login from '../pages/login/Login'
-import Recuperar from '../pages/login/Recuperar'
-import Cadastro from '../pages/login/Cadastro'
+import Login                  from '../pages/login/Login.jsx';
+import Recuperar              from '../pages/login/Recuperar.jsx';
+import Cadastro               from '../pages/login/Cadastro.jsx';
 
 // Rotas de Agente
-import Agente_home from '../pages/agente/Agente_home'
-import Agente_consultas from '../pages/agente/Agente_consultas'
-import Agente_novoPaciente from '../pages/agente/Agente_novo-paciente'
-import Agente_alterarPaciente from '../pages/agente/Agente_alterar-paciente'
+import Agente_home            from '../pages/agente/Agente_home.jsx';
+import Agente_consultas       from '../pages/agente/Agente_consultas.jsx';
+import Agente_novoPaciente    from '../pages/agente/Agente_novo-paciente.jsx';
+import Agente_alterarPaciente from '../pages/agente/Agente_alterar-paciente.jsx';
 
 // Rotas de Paciente
-import Paciente_home from '../pages/paciente/Paciente_home'
+import Paciente_home          from '../pages/paciente/Paciente_home'
 
 
 export default function AppRoutes() {
