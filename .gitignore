@@ -1,5 +1,7 @@
 node_modules/
 .npm
 .env
+.env.local
+.env.prod
 .yarn/*
 data-source.js

@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -r dotenv/config src/index.js",
-    "start": "npm install && npm audit fix && nodemon -r dotenv/config src/index.js",
+    "dev:local": "cross-env NODE_ENV=local nodemon --env-file=.env.local -r dotenv/config src/index.js",
+    "dev:cloud": "cross-env NODE_ENV=production nodemon --env-file=.env.production -r dotenv/config src/index.js",
+    "start": "bun i && bun audit fix && nodemon -r dotenv/config src/index.js",
     "generate_migration": "npx typeorm -d ./src/database/data-source.js migration:generate ./src/database/migrations/db --outputJs",
     "run_migrations": "npx typeorm -d ./src/database/data-source.js migration:run"
   },
@@ -15,7 +16,8 @@
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
-    "cpf-cnpj-validator": "^1.0.3",
+    "cpf-cnpj-validator": "^2.1.2",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.4.2",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
@@ -25,5 +27,8 @@
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.24",
     "zod": "^4.1.5"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
   }
 }
