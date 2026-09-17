@@ -8,7 +8,6 @@ import { useEffect, useState, useMemo } from 'react';
 import { useVerificarCEP } from '../../hooks/useVerificarCEP.js';
 import { TextField, Select, MenuItem, FormControl, InputLabel, ListSubheader, Switch, Autocomplete } from "@mui/material";
 import { PatternFormat } from 'react-number-format';
-import { Button } from 'react-bootstrap';
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
@@ -74,8 +73,6 @@ function Admin_cadUsuario() {
 
 
    const navigate = useNavigate();
-
-   const [modoEdicao, setModoEdicao] = useState(false);
    
    const [formNovoPaciente, setFormNovoPaciente] = useState({
       nome: null,

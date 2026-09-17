@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Index.css";
 // Substitua pelo caminho do seu ícone de ajuda
-import helpIcon from "../../components/Sidenav/iconsSideBar/home.png"; 
+import helpIcon from "../../components/Sidenav/iconsSideBar/Home.png"; 
 
 function ButtonFAQ() {
   return (

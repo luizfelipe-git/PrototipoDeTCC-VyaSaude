@@ -2,7 +2,7 @@ import "./Gerente.css";
 import Header from "../../components/Header/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_gerente/Index.jsx";
 
-import { Link, useNavigate  } from "react-router-dom";
+import { Link  } from "react-router-dom";
 
 function Gerente_homeEndereco() {
    return(

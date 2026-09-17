@@ -1,7 +1,7 @@
 import "./Admin.css";
 import Header from "../../components/Header/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
-import { Link, useNavigate  } from "react-router-dom";
+import { Form } from "react-bootstrap";
 
 function Admin_histConsultas() {
    return(

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
 
 function Cadastro_Pacientes() {
    return(

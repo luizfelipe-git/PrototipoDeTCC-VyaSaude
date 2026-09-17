@@ -2,14 +2,7 @@ import '../../Sidenav/Index.css';
 import { Link } from "react-router-dom";
 
 import UserManagerIcon from '../iconsSideBar/UserManagerIcon.png';
-import ClosePane       from '../iconsSideBar/ClosePane.png';
-import configIcon      from '../iconsSideBar/configIcon.png';
 import dashIcon        from '../iconsSideBar/dashIcon.png';
-import dbIcon          from '../iconsSideBar/dbIcon.png';
-import HomeAddress     from '../iconsSideBar/HomeAddress.png';
-import OrgManagericon  from '../iconsSideBar/OrgManagerIcon.png';
-import query           from '../iconsSideBar/query.png';
-import AddUserMale     from '../iconsSideBar/AddUserMale.png';
 import home            from '../iconsSideBar/Home.png';
 
 // Página Inicial

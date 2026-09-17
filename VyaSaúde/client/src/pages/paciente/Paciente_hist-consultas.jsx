@@ -3,7 +3,7 @@ import Header from "../../components/Header/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_paciente/Index.jsx";
 import { Link } from "react-router-dom";
 import ButtonBack from "../../components/ButtonBack/Index.jsx"
-// import PageWIP from "../../components/PageWIP/Index.jsx";
+import PageWIP from "../../components/PageWIP/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';

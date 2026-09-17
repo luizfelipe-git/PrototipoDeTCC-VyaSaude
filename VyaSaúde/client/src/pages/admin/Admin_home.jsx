@@ -1,7 +1,6 @@
 import "./Admin.css";
 import Header from "../../components/Header/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
-import BoxSimpleInfos from "../../components/BoxSimpleInfos/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
 import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx"
@@ -11,16 +10,11 @@ import more from '../../components/Sidenav/iconsSideBar/more.png';
 import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
-import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
 import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 import { Link } from "react-router-dom";
 
 function Admin_home() {
    const usuario = getUser();
-
-   const meusLinks = [
-      { label: 'Home', href: '' }
-   ];
 
    const navItems = [
       { label: 'Home', href: '/Admin_home', icon: HomeAddress },

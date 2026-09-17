@@ -2,7 +2,6 @@ import "./Agente.css";
 import Header from "../../components/Header/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
 // import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx"
-import { Link } from "react-router-dom";
 import { getUser } from "../../helpers/auth.js";
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";

@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { TextField } from '@mui/material'
 import { PatternFormat } from "react-number-format";
-
 import { GoX } from "react-icons/go";
+import { toast } from 'react-toastify';
 
 export default function Modal_Agente_DetalhesPaciente({onClose, pacienteId}) {
    const [usuario, setUsuario] = useState(undefined);

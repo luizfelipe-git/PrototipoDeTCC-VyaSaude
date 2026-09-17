@@ -24,7 +24,6 @@ import { MdAssignmentAdd } from "react-icons/md";
 import { MdOutlineRefresh } from "react-icons/md";
 import { FaSort, FaSortUp, FaSortDown } from "react-icons/fa";
 import { Search, Clear } from "@mui/icons-material";
-import { BiSolidEdit } from "react-icons/bi";
 
 function Agente_histVisitas() {
    const navigate = useNavigate();

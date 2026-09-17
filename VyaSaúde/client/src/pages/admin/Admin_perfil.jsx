@@ -9,7 +9,7 @@ import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import api from '../../services/api.js';
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Form } from 'react-bootstrap';
 import { useVerificarCEP } from '../../hooks/useVerificarCEP.js';
 
