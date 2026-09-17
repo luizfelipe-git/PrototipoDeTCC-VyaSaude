@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev:local": "cross-env NODE_ENV=local nodemon --env-file=.env.local -r dotenv/config src/index.js",
-    "dev:cloud": "cross-env NODE_ENV=production nodemon --env-file=.env.production -r dotenv/config src/index.js",
+   "vercel:dev": "vercel dev",
+    "dev:local": "cross-env NODE_ENV=development nodemon --env-file=.env.development -r dotenv/config src/index.js",
+    "dev:prod": "cross-env NODE_ENV=production nodemon --env-file=.env.production -r dotenv/config src/index.js",
     "start": "bun i && bun audit fix && nodemon -r dotenv/config src/index.js",
     "generate_migration": "npx typeorm -d ./src/database/data-source.js migration:generate ./src/database/migrations/db --outputJs",
     "run_migrations": "npx typeorm -d ./src/database/data-source.js migration:run"
