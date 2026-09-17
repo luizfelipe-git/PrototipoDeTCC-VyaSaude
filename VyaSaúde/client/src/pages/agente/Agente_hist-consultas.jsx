@@ -1,13 +1,13 @@
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
-import ButtonBack from "../../components/ButtonBack/Index"
-import PageWIP from "../../components/PageWIP/Index"
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import ButtonBack from "../../components/ButtonBack/Index.jsx"
+// import PageWIP from "../../components/PageWIP/Index.jsx";
 import { Link, useNavigate  } from "react-router-dom";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 

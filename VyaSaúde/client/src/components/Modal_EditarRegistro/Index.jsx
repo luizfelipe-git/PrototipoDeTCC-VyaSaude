@@ -1,7 +1,7 @@
 import "./Modal_EditarRegistro.css";
 import { TextField } from "@mui/material";
 import { useState, useEffect } from 'react';
-import api from '../../services/api';
+import api from '../../services/api.js';
 
 export default function Modal_EditarRegistro({onClose}) {
    const [dadosPaciente, setDadosPaciente] = useState({

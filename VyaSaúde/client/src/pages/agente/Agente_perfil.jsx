@@ -1,9 +1,9 @@
-import "../../App.css"
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
-import api from '../../services/api';
-import { getUser } from "../../helpers/auth"
+import "../../App.css";
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import api from '../../services/api.js';
+import { getUser } from "../../helpers/auth.js";
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { TextField } from "@mui/material"
@@ -12,8 +12,8 @@ import { PatternFormat } from 'react-number-format';
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 

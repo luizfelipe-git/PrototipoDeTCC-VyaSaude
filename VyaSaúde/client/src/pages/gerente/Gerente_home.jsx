@@ -1,18 +1,18 @@
-import "./Gerente.css"
-import Header from "../../components/Header/"
+import "./Gerente.css";
+import Header from "../../components/Header/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import BoxSimpleInfos from "../../components/BoxSimpleInfos/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_gerente/"
-import ButtonFAQ from "../../components/ButtonFAQ"
-import { getUser } from "../../helpers/auth";
+import Sidenav from "../../components/Sidenav/Sidenav_gerente/Index.jsx"
+import ButtonFAQ from "../../components/ButtonFAQ/Index.jsx"
+import { getUser } from "../../helpers/auth.js";
 
 import more from '../../components/Sidenav/iconsSideBar/more.png';
-import AddUserMale     from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
-import HomeAddress     from '../../components/Sidenav/iconsSideBar/Home Address.png';
+import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 
 function Gerente_home() {
    const usuario = getUser();

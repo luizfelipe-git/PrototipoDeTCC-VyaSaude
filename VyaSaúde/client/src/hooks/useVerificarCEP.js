@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { buscarCep } from '../services/viacep';
+import { buscarCep } from '../services/viacep.js';
 
 export function useVerificarCEP(setFormDados) {
    const [cep, setCEP] = useState('');

@@ -1,4 +1,4 @@
-import './Index.css'
+import './Index.css';
 import { getUser } from '../../helpers/auth.js';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';

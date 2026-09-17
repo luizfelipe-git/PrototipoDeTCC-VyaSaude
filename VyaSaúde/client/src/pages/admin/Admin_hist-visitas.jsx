@@ -1,23 +1,23 @@
-import "./Admin.css"
-import api from '../../services/api';
+import "./Admin.css";
+import api from '../../services/api.js';
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from 'react-bootstrap';
 import { PatternFormat } from "react-number-format";
 import { TextField, InputAdornment } from "@mui/material";
 
-import Header from "../../components/Header"
-import Sidenav from "../../components/Sidenav/Sidenav_admin"
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 
-import Modal_NovoRegistro from "../../components/Modal_NovoRegistro";
-import Modal_EditarRegistro from "../../components/Modal_EditarRegistro";
-import Modal_DetalhesRegistro from "../../components/Modal_DetalhesRegistro";
+import Modal_NovoRegistro from "../../components/Modal_NovoRegistro/Index.jsx";
+import Modal_EditarRegistro from "../../components/Modal_EditarRegistro/Index.jsx";
+import Modal_DetalhesRegistro from "../../components/Modal_DetalhesRegistro/Index.jsx";
 
 import { GoReply } from "react-icons/go";
 import { MdContentPasteSearch } from "react-icons/md";

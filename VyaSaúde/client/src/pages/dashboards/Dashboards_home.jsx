@@ -1,6 +1,6 @@
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
 import { Link, useNavigate  } from "react-router-dom";
 
 function Dashboards_home() {

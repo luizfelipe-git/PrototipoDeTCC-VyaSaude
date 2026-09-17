@@ -1,18 +1,18 @@
-import "./Paciente.css"
-import Header from "../../components/Header/"
+import "./Paciente.css";
+import Header from "../../components/Header/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import BoxSimpleInfos from "../../components/BoxSimpleInfos/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_paciente/"
-import ButtonAjuda from "../../components/ButtonAjuda"
-import { getUser } from "../../helpers/auth";
+import Sidenav from "../../components/Sidenav/Sidenav_paciente/Index.jsx";
+import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx"
+import { getUser } from "../../helpers/auth.js";
 
 import more from '../../components/Sidenav/iconsSideBar/more.png';
-import AddUserMale     from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
-import HomeAddress     from '../../components/Sidenav/iconsSideBar/Home Address.png';
+import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 
 function Paciente_home() {
    const usuario = getUser();

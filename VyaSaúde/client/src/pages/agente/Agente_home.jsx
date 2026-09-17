@@ -1,20 +1,20 @@
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
-import ButtonAjuda from "../../components/ButtonAjuda/Index"
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+// import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx"
 import { Link } from "react-router-dom";
-import { getUser } from "../../helpers/auth";
+import { getUser } from "../../helpers/auth.js";
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import BoxSimpleInfos from "../../components/BoxSimpleInfos/Index.jsx";
 
 import more from '../../components/Sidenav/iconsSideBar/more.png';
-import AddUserMale     from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
-import HomeAddress     from '../../components/Sidenav/iconsSideBar/Home Address.png';
+import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 
 function Agente_home() {
    const usuario = getUser();
@@ -23,7 +23,7 @@ function Agente_home() {
       <div className="app">
          <Header/>
          <Sidenav/>
-         <ButtonAjuda/>
+         {/* <ButtonAjuda/> */}
          <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '' }]} />
          <NavBar items={[
             { label: 'Home', href: '/agente_home', icon: HomeAddress },

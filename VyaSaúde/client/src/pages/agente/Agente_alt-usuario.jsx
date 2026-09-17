@@ -1,7 +1,7 @@
-import "./Agente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_agente/"
-import api from '../../services/api';
+import "./Agente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import api from '../../services/api.js';
 import { useNavigate  } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from 'react-bootstrap';
@@ -10,12 +10,12 @@ import { TextField, InputAdornment, IconButton, Pagination, Stack } from "@mui/m
 
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 
-import Modal_Agente_DetalhesPaciente from "../../components/Modal_Agente_DetalhesPaciente";
+import Modal_Agente_DetalhesPaciente from "../../components/Modal_Agente_DetalhesPaciente/Index.jsx";
 
 import { GoPersonAdd, GoReply } from "react-icons/go";
 import { MdContentPasteSearch, MdRefresh } from "react-icons/md";

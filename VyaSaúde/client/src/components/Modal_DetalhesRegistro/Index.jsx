@@ -1,5 +1,5 @@
 import "./Modal_DetalhesRegistro.css";
-import api from '../../services/api';
+import api from '../../services/api.js';
 import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { TextField } from '@mui/material'

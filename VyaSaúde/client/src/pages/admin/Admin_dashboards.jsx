@@ -1,7 +1,7 @@
-import "./Admin.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_admin/"
-import PageWIP from "../../components/PageWIP"
+import "./Admin.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
+import PageWIP from "../../components/PageWIP/Index.jsx";
 import { Link, useNavigate  } from "react-router-dom";
 
 function Admin_dashboards() {

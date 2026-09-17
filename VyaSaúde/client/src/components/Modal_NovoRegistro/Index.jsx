@@ -1,10 +1,10 @@
 import "./Modal_NovoRegistro.css";
-import api from '../../services/api';
+import api from '../../services/api.js';
 import { TextField, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 import { PatternFormat } from 'react-number-format';
 import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import { getUser } from "../../helpers/auth";
+import { getUser } from "../../helpers/auth.js";
 
 import { GoX } from "react-icons/go";
 
