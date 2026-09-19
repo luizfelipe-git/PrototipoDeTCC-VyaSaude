@@ -1,6 +1,6 @@
-import "./Admin.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_admin/"
+import "./Admin.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
 import { Form } from 'react-bootstrap';
 
 function Admin_altUsuario() {

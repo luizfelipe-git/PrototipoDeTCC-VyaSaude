@@ -1,16 +1,16 @@
-import "./Admin.css"
-import Header from "../../components/Header"
-import Sidenav from "../../components/Sidenav/Sidenav_admin"
+import "./Admin.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/Add User Male.png';
-import api from '../../services/api';
+import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
+import api from '../../services/api.js';
 import { useState} from 'react';
 import { useNavigate } from "react-router-dom";
-import { useVerificarCEP } from '../../hooks/useVerificarCEP';
+import { useVerificarCEP } from '../../hooks/useVerificarCEP.js';
 import { Form } from 'react-bootstrap';
 
 async function verificarExistencia(endpoint, cpf) {
