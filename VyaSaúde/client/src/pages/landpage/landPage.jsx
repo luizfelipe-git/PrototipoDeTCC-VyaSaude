@@ -1,11 +1,11 @@
-import "./landPage.css"
+import "./LandPage.css"
 
-function landPage() {
+function LandPage() {
    return(
       <div className="app">
-         <h1>landPage</h1>
+         <h1>LandPage</h1>
       </div>
    )
 }
 
-export default landPage;
+export default LandPage;
