@@ -1,21 +1,18 @@
 
-import "./Paciente.css"
-import Header from "../../components/Header/"
-import Sidenav from "../../components/Sidenav/Sidenav_paciente/"
-import ButtonBack from "../../components/ButtonBack/Index"
-import PageWIP from "../../components/PageWIP/Index"
+import "./Paciente.css";
+import Header from "../../components/Header/Index.jsx";
+import Sidenav from "../../components/Sidenav/Sidenav_paciente/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/Home Address.png';
+import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
-import api from '../../services/api';
-import { getUser } from "../../helpers/auth"
+import api from '../../services/api.js';
+import { getUser } from "../../helpers/auth.js";
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from "react-router-dom";
-import { Form } from 'react-bootstrap';
-import { TextField } from '@mui/material'
+import { useNavigate } from "react-router-dom";
+import { TextField } from '@mui/material';
 import { PatternFormat } from "react-number-format";
 import { Button } from 'react-bootstrap';
 
@@ -24,7 +21,6 @@ function Paciente_perfil() {
    const navigate = useNavigate();
 
    const [usuario, setUsuario] = useState(undefined);
-   const [modoEdicao, setModoEdicao] = useState(false);
 
    const [dadosPaciente, setDadosPaciente] = useState({
       id: '',
