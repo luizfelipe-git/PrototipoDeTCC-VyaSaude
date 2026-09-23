@@ -23,35 +23,35 @@ function Sidenav() {
          <div className="sidenav-content">
             <div className='sidenav-group1'>
                
-               <Link to="/Agente_home">
+               <Link to="/home">
                <div className='sidenav-buttons'>
                   <img src={home} className="sideBarIcon"/>
                   <p>Página Inicial</p>
                </div>
                </Link>
 
-               <Link to="/Agente_home-usuario">
+               <Link to="/agente/paciente">
                <div className='sidenav-buttons'>
                   <img src={AddUserMale} className="sideBarIcon"/>
                   <p>Cadastro de Pacientes</p>
                </div>
                </Link>
 
-               {/* <Link to="/Agente_home-endereco">
+               <Link to="/agente/endereco">
                <div className='sidenav-buttons'>
-                  <img src={HomeAddress} className="sideBarIcon"/>
+                  <img src={home} className="sideBarIcon"/>
                   <p>Cadastro de Endereços</p>
                </div>
-               </Link> */}
+               </Link>
 
-               <Link to="/Agente_hist-consultas">
+               <Link to="/agente/historico-consultas">
                <div className='sidenav-buttons'>
                   <img src={query} className="sideBarIcon"/>
                   <p>Histórico de Consultas</p>
                </div>
                </Link>
 
-               <Link to="/Agente_hist-visitas">
+               <Link to="/agente/historico-visitas">
                <div className='sidenav-buttons'>
                   <img src={query} className="sideBarIcon"/>
                   <p>Agenda de Visitas</p>
@@ -62,14 +62,14 @@ function Sidenav() {
 
             <div className='sidenav-group2'>
 
-               <Link to="/Agente_perfil">
+               <Link to="/agente/perfil">
                <div className='sidenav-buttons'>
                   <img src={UserManagerIcon} className="sideBarIcon"/>
                   <p>Meu Perfil</p>
                </div>
                </Link>
 
-               <Link to="/Agente_dashboards">
+               <Link to="/agente/dashboards">
                <div className='sidenav-buttons'>
                   <img src={dashIcon} className="sideBarIcon"/>
                   <p>Dashboards</p>
