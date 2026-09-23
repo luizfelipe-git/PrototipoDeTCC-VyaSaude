@@ -38,17 +38,18 @@ function Paciente_dashboards() {
             { label: 'Consultas', href: '/Paciente_hist-consultas', icon: query },
             { label: 'Dash', href: '/Paciente_dashboards', icon: dashIcon }
          ]} />
-         <main className="content-home" style={{position: "relative"}}>
-            <Link to="/Paciente_home" className="backButton">
-               <ButtonBack />
-            </Link>
+         <main className="content-pages">
+            <div className="content-pages-paciente">
+               <Link to="/Paciente_home" className="backButton">
+                  <ButtonBack />
+               </Link>
 
-            <div className="title_Home">
-               <h1><b>Dashboards</b></h1>
+               <div className="title_Home">
+                  <h1><b>Dashboards</b></h1>
+               </div>
+
+               <PageWIP />
             </div>
-
-            <PageWIP />
-
          </main>
       </div>
    )

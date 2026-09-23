@@ -3,11 +3,11 @@
    grid-template-rows: repeat(2, auto) !important;  /* 2 linhas */
 }
 
-.app {
-   margin-bottom: 48vh;
-}
-
 .content-pages-paciente {
+   .app {
+      margin-bottom: 48vh;
+   }
+
    .form-fields {
       display: flex;
       text-align: center;

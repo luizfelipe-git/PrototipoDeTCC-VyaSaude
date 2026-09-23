@@ -6,9 +6,11 @@ function ButtonAjuda() {
    return(
       <div className="app">
          <Header/>
-         <main className="content-home">
-            <PageWIP />
-            
+         <main className="content-pages">
+            <div className="content-pages-ajuda">
+
+            <PageWIP />   
+            </div>
          </main>
       </div>
    )

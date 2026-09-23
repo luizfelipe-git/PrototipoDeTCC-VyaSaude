@@ -9,13 +9,15 @@ function Gerente_homeUsuario() {
          <Header/>
          <Sidenav/>
          <main className="content-home">
-            <div className="title_Home">
-               <h1><b>Home Usuario</b><br/>(Gerente)</h1>
-            </div>
+            <div className="content-pages-gerente">
+               <div className="title_Home">
+                  <h1><b>Home Usuario</b><br/>(Gerente)</h1>
+               </div>
 
-            <div className="shortcutField paciente-home">
-               <Link to='/Gerente_cad-usuario'><div className="shortcutClick"><p>Cadastrar novo usuário</p></div></Link>
-               <Link to='/Gerente_alt-usuario'><div className="shortcutClick"><p>Alterar usuários</p></div></Link>
+               <div className="shortcutField paciente-home">
+                  <Link to='/Gerente_cad-usuario'><div className="shortcutClick"><p>Cadastrar novo usuário</p></div></Link>
+                  <Link to='/Gerente_alt-usuario'><div className="shortcutClick"><p>Alterar usuários</p></div></Link>
+               </div>
             </div>
          </main>
       </div>

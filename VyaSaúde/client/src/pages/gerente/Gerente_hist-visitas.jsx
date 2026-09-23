@@ -8,11 +8,13 @@ function Gerente_histVisitas() {
          <Header/>
          <Sidenav/>
          <main className="content-home">
-            <div className="title_Home">
-               <h1><b>Página Inicial</b><br/>(Gerente)</h1>
-            </div>
-            <div className="grid-container_Home admin_home_grid">
+            <div className="content-pages-gerente">
+               <div className="title_Home">
+                  <h1><b>Página Inicial</b><br/>(Gerente)</h1>
+               </div>
+               <div className="grid-container_Home admin_home_grid">
 
+               </div>
             </div>
          </main>
       </div>

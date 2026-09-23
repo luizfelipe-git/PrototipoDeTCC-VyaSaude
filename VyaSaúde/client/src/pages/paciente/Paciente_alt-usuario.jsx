@@ -20,13 +20,15 @@ function Paciente_altUsuario() {
             { label: 'Consultas', href: '/Paciente_hist-consultas', icon: query },
             { label: 'Dash', href: '/Paciente_dashboards', icon: dashIcon }
          ]} />
-         <main className="content-home">
-            <div className="title_Home">
-               <h1><b>Página Inicial</b><br/>(Paciente)</h1>
-            </div>
+         <main className="content-pages">
+            <div className="content-pages-paciente">
+               <div className="title_Home">
+                  <h1><b>Página Inicial</b><br/>(Paciente)</h1>
+               </div>
 
-            <div className="grid-container_Home paciente-home">
+               <div className="grid-container_Home paciente-home">
 
+               </div>
             </div>
          </main>
       </div>

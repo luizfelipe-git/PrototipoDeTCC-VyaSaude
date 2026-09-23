@@ -2,11 +2,11 @@
    padding: 15px;
 }
 
-.app {
-   margin-bottom: 48vh;
-}
-
 .content-pages-recepcao {
+   .app {
+      margin-bottom: 48vh;
+   }
+
    .form-fields {
       display: flex;
       text-align: center;

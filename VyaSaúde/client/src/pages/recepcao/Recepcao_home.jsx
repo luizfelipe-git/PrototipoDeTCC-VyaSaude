@@ -30,81 +30,83 @@ function Recepcao_home() {
             { label: 'Dash', href: '/Recepcao_dashboards', icon: dashIcon }
          ]} />
          <main className="content-home">
-            <div className="title_Home">
-               <img src={more} id="logoMore"/><br /><br />
-               <h2><b>Olá, {usuario.nome}!</b></h2> {/* PRONTO PRA ESTILIZAR: NOME DO USUARIO DINAMICO */}
-               <h4>Bem-vindo(a) à sua área de recepcionista.</h4>
-            </div>
+            <div className="content-pages-recepcao">
+               <div className="title_Home">
+                  <img src={more} id="logoMore"/><br /><br />
+                  <h2><b>Olá, {usuario.nome}!</b></h2> {/* PRONTO PRA ESTILIZAR: NOME DO USUARIO DINAMICO */}
+                  <h4>Bem-vindo(a) à sua área de recepcionista.</h4>
+               </div>
 
-            {/* <div className="grid-container_Home paciente-home">
+               {/* <div className="grid-container_Home paciente-home">
 
-               <Link className="grid-items_Home" to="/Paciente_perfil"><p>Meu perfil</p></Link>
+                  <Link className="grid-items_Home" to="/Paciente_perfil"><p>Meu perfil</p></Link>
 
-               <Link className="grid-items_Home" to="/Paciente_histConsultas"><p className="text-danger">Histórico de Consultas</p></Link>
+                  <Link className="grid-items_Home" to="/Paciente_histConsultas"><p className="text-danger">Histórico de Consultas</p></Link>
 
-            </div> */}
+               </div> */}
 
-            {/* <p><b>Navegar para:</b></p> */}
-            <div className="shortcutField paciente-home">
+               {/* <p><b>Navegar para:</b></p> */}
+               <div className="shortcutField paciente-home">
 
-               {/* <Link
-               className="shortcutClick"
-               to="/Paciente_perfil">
-               <p>Meu perfil</p>
-               </Link>
+                  {/* <Link
+                  className="shortcutClick"
+                  to="/Paciente_perfil">
+                  <p>Meu perfil</p>
+                  </Link>
 
-               <Link
-               className="shortcutClick"
-               to="/Paciente_histConsultas">
-               <p>Histórico de Consultas</p>
-               </Link> */}
-
-            </div>
-
-            <div className="gridBoxOtherOptions">
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={AddUserMale}
-                     title="Cadastro de Pacientes"
-                     description="Cadastre ou altere informações de pacientes na plataforma"
-                     linkTo="/Recepcao_home-usuario"
-                     buttonText="Acessar pacientes"
-                  />
-
-                  <BoxSimpleInfos
-                     icon={query}
-                     title="Histórico de Consultas"
-                     description="Área para visualizar o histórico de consultas, assim como consultas futuras"
-                     linkTo="/Recepcao_hist-consultas"
-                     buttonText="Acessar consultas"
-                  />
-
-                  <BoxSimpleInfos
-                     icon={UserManagerIcon}
-                     title="Meu Perfil"
-                     description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
-                     linkTo="/Recepcao_perfil"
-                     buttonText="Visualizar perfil"
-                  />
+                  <Link
+                  className="shortcutClick"
+                  to="/Paciente_histConsultas">
+                  <p>Histórico de Consultas</p>
+                  </Link> */}
 
                </div>
 
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={HomeAddress}
-                     title="Cadastro de Endereços"
-                     description="Cadastre ou altere informações de endereços na plataforma"
-                     linkTo="/Recepcao_home-endereco"
-                     buttonText="Acessar endereços"
-                  />
+               <div className="gridBoxOtherOptions">
+                  <div className="gridBoxOptions_lines">
+                     <BoxSimpleInfos
+                        icon={AddUserMale}
+                        title="Cadastro de Pacientes"
+                        description="Cadastre ou altere informações de pacientes na plataforma"
+                        linkTo="/Recepcao_home-usuario"
+                        buttonText="Acessar pacientes"
+                     />
 
-                  <BoxSimpleInfos
-                     icon={dashIcon}
-                     title="Área de Dashboards"
-                     description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
-                     linkTo="/Recepcao_dashboards"
-                     buttonText="Ir para Dashboards"
-                  />
+                     <BoxSimpleInfos
+                        icon={query}
+                        title="Histórico de Consultas"
+                        description="Área para visualizar o histórico de consultas, assim como consultas futuras"
+                        linkTo="/Recepcao_hist-consultas"
+                        buttonText="Acessar consultas"
+                     />
+
+                     <BoxSimpleInfos
+                        icon={UserManagerIcon}
+                        title="Meu Perfil"
+                        description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
+                        linkTo="/Recepcao_perfil"
+                        buttonText="Visualizar perfil"
+                     />
+
+                  </div>
+
+                  <div className="gridBoxOptions_lines">
+                     <BoxSimpleInfos
+                        icon={HomeAddress}
+                        title="Cadastro de Endereços"
+                        description="Cadastre ou altere informações de endereços na plataforma"
+                        linkTo="/Recepcao_home-endereco"
+                        buttonText="Acessar endereços"
+                     />
+
+                     <BoxSimpleInfos
+                        icon={dashIcon}
+                        title="Área de Dashboards"
+                        description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
+                        linkTo="/Recepcao_dashboards"
+                        buttonText="Ir para Dashboards"
+                     />
+                  </div>
                </div>
             </div>
          </main>

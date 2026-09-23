@@ -28,44 +28,46 @@ function Paciente_home() {
             { label: 'Consultas', href: '/Paciente_hist-consultas', icon: query },
             { label: 'Dash', href: '/Paciente_dashboards', icon: dashIcon }
          ]} />
-         <main className="content-home">
-            <div className="title_Home">
-               <img src={more} id="logoMore"/><br /><br />
-               <h2><b>Olá, {usuario.nome}!</b></h2> {/* PRONTO PRA ESTILIZAR: NOME DO USUARIO DINAMICO */}
-               <h4>Bem-vindo(a) à sua área do paciente.</h4>
-            </div>
-
-            {/* <p><b>Navegar para:</b></p> */}
-            <div className="shortcutField paciente-home">
-            </div>
-
-            <div className="gridBoxOtherOptions">
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={UserManagerIcon}
-                     title="Meu Perfil"
-                     description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
-                     linkTo="/Paciente_perfil"
-                     buttonText="Visualizar perfil"
-                  />
-                  <BoxSimpleInfos
-                     icon={query}
-                     title="Histórico de Consultas"
-                     description="Área para visualizar o histórico de consultas, assim como consultas futuras"
-                     linkTo="/Paciente_hist-consultas"
-                     buttonText="Clique para mais"
-                  />
+         <main className="content-pages">
+            <div className="content-pages-paciente">
+               <div className="title_Home">
+                  <img src={more} id="logoMore"/><br /><br />
+                  <h2><b>Olá, {usuario.nome}!</b></h2> {/* PRONTO PRA ESTILIZAR: NOME DO USUARIO DINAMICO */}
+                  <h4>Bem-vindo(a) à sua área do paciente.</h4>
                </div>
 
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={dashIcon}
-                     title="Área de Dashboards"
-                     description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
-                     linkTo="/Paciente_dashboards"
-                     buttonText="Ir para Dashboards"
-                  />
-               </div>  
+               {/* <p><b>Navegar para:</b></p> */}
+               <div className="shortcutField paciente-home">
+               </div>
+
+               <div className="gridBoxOtherOptions">
+                  <div className="gridBoxOptions_lines">
+                     <BoxSimpleInfos
+                        icon={UserManagerIcon}
+                        title="Meu Perfil"
+                        description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
+                        linkTo="/Paciente_perfil"
+                        buttonText="Visualizar perfil"
+                     />
+                     <BoxSimpleInfos
+                        icon={query}
+                        title="Histórico de Consultas"
+                        description="Área para visualizar o histórico de consultas, assim como consultas futuras"
+                        linkTo="/Paciente_hist-consultas"
+                        buttonText="Clique para mais"
+                     />
+                  </div>
+
+                  <div className="gridBoxOptions_lines">
+                     <BoxSimpleInfos
+                        icon={dashIcon}
+                        title="Área de Dashboards"
+                        description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
+                        linkTo="/paciente/dashboards"
+                        buttonText="Ir para Dashboards"
+                     />
+                  </div>  
+               </div>
             </div>
          </main>
       </div>
