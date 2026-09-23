@@ -44,7 +44,7 @@ function Login() {
          });
          
          console.log(`usuarioLogado: `, usuarioLogado.data);  
-         navigate(`/${usuarioLogado.data.tipoUsuario}_home`);
+         navigate(`/${usuarioLogado.data.tipoUsuario}/home`);
       }
       catch(error) {
          console.log(error.response);

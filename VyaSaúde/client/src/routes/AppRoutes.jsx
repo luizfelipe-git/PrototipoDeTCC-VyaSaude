@@ -1,35 +1,69 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-// Rotas de Login
-import Login                  from '../pages/login/Login.jsx';
-import Recuperar              from '../pages/login/Recuperar.jsx';
-import Cadastro               from '../pages/login/Cadastro.jsx';
+// ROTAS COMUNS
+import Login from "../pages/login/Login.jsx";
+import Recuperar from "../pages/login/Recuperar.jsx";
+import Cadastro from "../pages/login/Cadastro.jsx";
+import Ajuda from "../pages/ajuda/Ajuda.jsx";
+// import LandingPage from "../pages/landingPage/LandingPage.jsx";
 
-// Rotas de Agente
-import Agente_home            from '../pages/agente/Agente_home.jsx';
-import Agente_consultas       from '../pages/agente/Agente_consultas.jsx';
-import Agente_novoPaciente    from '../pages/agente/Agente_novo-paciente.jsx';
-import Agente_alterarPaciente from '../pages/agente/Agente_alterar-paciente.jsx';
-
-// Rotas de Paciente
-import Paciente_home          from '../pages/paciente/Paciente_home';
-
+// ROTAS ESPECÍFICAS
+import AdminRoutes from "../routes/AdminRoutes.jsx";
+import AgenteRoutes from "../routes/AgenteRoutes.jsx";
+import GerenteRoutes from "../routes/GerenteRoutes.jsx";
+import RecepcaoRoutes from "../routes/RecepcaoRoutes.jsx";
+import PacienteRoutes from "../routes/PacienteRoutes.jsx";
 
 export default function AppRoutes() {
-   return (
-      <Router>
-         <Routes>
-            <Route path="/"                        element={<Login />} />
-            <Route path="/cadastro"                element={<Cadastro />} />
-            <Route path="/recuperar"               element={<Recuperar />} />
+	return (
+		<Routes>
+			{/* Rotas Comuns */}
+			<Route
+				path="/"
+				element={<Login />}
+			/>
+			<Route
+				path="/login"
+				element={<Login />}
+			/>
+			<Route
+				path="/cadastro"
+				element={<Cadastro />}
+			/>
+			<Route
+				path="/recuperar"
+				element={<Recuperar />}
+			/>
+			<Route
+				path="/ajuda"
+				element={<Ajuda />}
+			/>
+			{/* <Route
+				path="/landingPage"
+				element={<LandingPage />}
+			/> */}
 
-            <Route path="/Agente_home"             element={<Agente_home />} />
-            <Route path="/Agente_consultas"        element={<Agente_consultas />} />
-            <Route path="/Agente_novoPaciente"     element={<Agente_novoPaciente />} />
-            <Route path="/Agente_alterarPaciente"  element={<Agente_alterarPaciente />} />
-
-            <Route path="/Paciente_home"           element={<Paciente_home />} />
-         </Routes>
-      </Router>
-   );
+			{/* Rotas Específicas */}
+			<Route
+				path="/agente/*"
+				element={<AgenteRoutes />}
+			/>
+			<Route
+				path="/admin/*"
+				element={<AdminRoutes />}
+			/>
+			<Route
+				path="/gerente/*"
+				element={<GerenteRoutes />}
+			/>
+			<Route
+				path="/recepcao/*"
+				element={<RecepcaoRoutes />}
+			/>
+			<Route
+				path="/paciente/*"
+				element={<PacienteRoutes />}
+			/>
+		</Routes>
+	);
 }
