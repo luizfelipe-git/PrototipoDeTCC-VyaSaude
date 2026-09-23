@@ -26,14 +26,8 @@ O sistema permite:
 ### Administradores
 - Responsáveis pela administração do sistema, como a implementação, integração de novos recursos, acesso a LOGs detalhados, Dashboards, e controle de usuários.
 
-### Gerente da UBS
-- Responsáveis pela gestão da unidade, através do acesso de LOGs, Dashboards, e controle de usuários.
-
 ### Agente
 - Responsáveis pelo agendamento de consultas em campo, visualizar históricos de consultas, e cadastro/alteração de pacientes e endereços.
-
-### Recepção
-- Responsáveis pelo agendamento de consultas na UBS, visualizar histórico de consultas, e cadastro/alteração de pacientes e endereços.
 
 ### Paciente
 - Usuários padrão do sistema, onde podem consultar seus dados, solicitar algumas alterações, e verificar histórico de consultas.
@@ -76,4 +70,17 @@ O sistema permite:
 </div>
 
 
-## :gear: Instalação e Utilização
+## :gear: Como rodar?
+Acesse o link abaixo:
+
+[Protótipo VyaSaúde (Vercel)](https://prototipo-vyasaude-e293qz2o9-luizfelipe-git.vercel.app)
+
+Disponibilizamos uma conta de agente para fins de testes. Utilize as credenciais:
+```
+agente@gmail.com
+```
+```
+123456789
+```
+
+Observação: Todos os dados supostamente pessoais foram gerados randomicamente com auxilio de IA para popular nosso banco de dados. Nenhum dado contido no projeto condiz com dados de pessoas reais.
