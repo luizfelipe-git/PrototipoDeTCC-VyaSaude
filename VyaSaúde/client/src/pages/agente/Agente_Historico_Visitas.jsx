@@ -25,7 +25,7 @@ import { MdOutlineRefresh } from "react-icons/md";
 import { FaSort, FaSortUp, FaSortDown } from "react-icons/fa";
 import { Search, Clear } from "@mui/icons-material";
 
-function Agente_histVisitas() {
+function Agente_Historico_Visitas() {
    const navigate = useNavigate();
 
    const [exibirModal_novoRegistro, setNovoRegistro] = useState(false); // Abertura e fechamento do Modal de Novo Registro
@@ -139,12 +139,12 @@ function Agente_histVisitas() {
       <div className="app">
          <Header/>
          <Sidenav/>
-         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/Agente_home' }, {label: 'Histórico de visitas domiciliares', href: 'Agente_hist-visitas'}]} />
+         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/agente/home' }, {label: 'Histórico de visitas domiciliares', href: 'agente/historico-visitas'}]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
          <main className="content-pages">
             <div className="content-pages-agente">
@@ -303,4 +303,4 @@ function Agente_histVisitas() {
   );
 }
 
-export default Agente_histVisitas;
+export default Agente_Historico_Visitas;

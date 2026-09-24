@@ -19,7 +19,7 @@ import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 
 import { GoReply } from "react-icons/go";
 
-function Agente_perfil() {
+function Agente_Perfil() {
    const navigate = useNavigate();
 
    const [usuario, setUsuario] = useState(undefined);
@@ -124,12 +124,12 @@ function Agente_perfil() {
       <div className="app">
          <Header/>
          <Sidenav/>
-         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/Agente_home' }, {label: 'Meu perfil', href: '/Agente_perfil'}]} />
+         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/agente/home' }, {label: 'Meu perfil', href: '/agente/perfil'}]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
          <main className="content-pages">
             <div className="content-pages-agente ">
@@ -179,4 +179,4 @@ function Agente_perfil() {
    )
 }
 
-export default Agente_perfil;
+export default Agente_Perfil;

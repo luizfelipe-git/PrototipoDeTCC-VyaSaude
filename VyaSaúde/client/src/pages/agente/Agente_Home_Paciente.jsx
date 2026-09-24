@@ -1,3 +1,4 @@
+import "../../App.css";
 import "./Agente.css";
 import Header from "../../components/Header/Index.jsx";
 import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
@@ -11,17 +12,17 @@ import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 
-function Agente_homeEndereco() {
+function Agente_Home_Paciente() {
    return(
       <div className="app">
          <Header/>
          <Sidenav/>
-         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '' }]} />
+         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/agente/home' }, {label: 'Cadastro', href: '/agente/paciente'}]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
          <main className="content-home" style={{position: "relative"}}>
             <Link to="/Agente_home" className="backButton">
@@ -29,15 +30,15 @@ function Agente_homeEndereco() {
             </Link>
 
             <div className="title_Home">
-               <h1><b>Cadastro de Endereços</b></h1>
+               <h1><b>Cadastro de Usuarios</b></h1>
             </div>
 
             <div className="simpleBoxShadow">
-               <h4>Selecione uma das opções abaixo</h4> <br />
-            
+               <h4>Selecione uma das opções abaixo</h4><br />
+
                <div className="shortcutField paciente-home">
-                  <Link to=''><div className="shortcutClick"><p>Cadastrar novo endereço</p></div></Link>
-                  <Link to=''><div className="shortcutClick"><p>Alterar endereços</p></div></Link>
+                  <Link to='/agente/cadastrar-paciente'><div className="shortcutClick"><p>Cadastrar novo usuário</p></div></Link>
+                  <Link to='/agente/alterar-paciente'><div className="shortcutClick"><p>Alterar usuários</p></div></Link>
                </div>
             </div>
          </main>
@@ -45,4 +46,4 @@ function Agente_homeEndereco() {
    )
 }
 
-export default Agente_homeEndereco;
+export default Agente_Home_Paciente;

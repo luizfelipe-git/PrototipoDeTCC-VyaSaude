@@ -22,7 +22,7 @@ import { MdContentPasteSearch, MdRefresh } from "react-icons/md";
 import { FaSort, FaSortUp, FaSortDown } from "react-icons/fa";
 import { Search, Clear } from "@mui/icons-material";
 
-function Agente_altUsuario() {
+function Agente_Alterar_Paciente() {
    const navigate = useNavigate();
 
    const [exibirModal_Agente_DetalhesPaciente, setModal_Agente_DetalhesPaciente] = useState(false); // Abertura e fechamento do Modal de Novo Registro
@@ -139,12 +139,12 @@ function Agente_altUsuario() {
       <div className="app">
          <Header/>
          <Sidenav/>
-         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/Agente_home' }, {label: 'Cadastro', href: '/Agente_home-usuario'}, {label: 'Alterar cadastro de paciente', href: '/Agente_alt-usuario'}]} />
+         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/agente/home' }, {label: 'Cadastro', href: '/agente/paciente'}, {label: 'Alterar cadastro de paciente', href: '/agente/alterar-paciente'}]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
          <main className="content-pages">
             <div className="content-pages-agente">
@@ -156,7 +156,7 @@ function Agente_altUsuario() {
                      </div>
 
                      <div className="title-button">
-                        <Button variant="outline-success" className="icons" onClick={() => navigate('/Agente_cad-usuario')}>
+                        <Button variant="outline-success" className="icons" onClick={() => navigate('/agente/cadastrar-paciente')}>
                            <GoPersonAdd />
                            <span> Novo cadastro</span>
                         </Button>
@@ -316,4 +316,4 @@ function Agente_altUsuario() {
    )
 }
 
-export default Agente_altUsuario;
+export default Agente_Alterar_Paciente;

@@ -25,7 +25,7 @@ const normalizarTexto = (texto) => {
    return texto ? texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : ""; // Tudo minúsculo
 };
 
-function Agente_cadUsuario() {
+function Agente_Cadastrar_Paciente() {
    const navigate = useNavigate();
 
    const [buscaCBO, setBuscaCBO] = useState('');
@@ -234,12 +234,12 @@ function Agente_cadUsuario() {
       <div className="app">
          <Header/>
          <Sidenav/>
-         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/Agente_home' }, {label: 'Cadastro', href: '/Agente_home-usuario'}, {label: 'Cadastro de novo paciente', href: 'Agente_cad-usuario'}]} />
+         <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '/agente/home' }, {label: 'Cadastro', href: '/agente/paciente'}, {label: 'Cadastro de novo paciente', href: 'Agente_cad-usuario'}]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
          <main className="content-pages">
             <div className="content-pages-agente">
@@ -574,7 +574,7 @@ function Agente_cadUsuario() {
                   
                   {/* Botões pra voltar pra tela inicial/realizar cadastro */}
                   <div className="form-buttons">
-                     <button className="btn btn-light border-dark border-opacity-75 px-4 py-2" onClick={() => {navigate('/Agente_home')}}>Voltar pra tela inicial</button>
+                     <button className="btn btn-light border-dark border-opacity-75 px-4 py-2" onClick={() => {navigate('/agente/home')}}>Voltar pra tela inicial</button>
                      <button form="form-novo_paciente-agente" className="btn btn-light border-dark border-opacity-75 px-4 py-2">Realizar cadastro</button>
                      {/* <div style={{display: "flex", gap: "20px"}}>
                         {modoEdicao === false ? <Button variant="outline-success" onClick={() => {''}}>Cancelar</Button> : ""}
@@ -588,4 +588,4 @@ function Agente_cadUsuario() {
    )
 }
 
-export default Agente_cadUsuario;
+export default Agente_Cadastrar_Paciente;

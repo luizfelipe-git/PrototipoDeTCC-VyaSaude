@@ -15,7 +15,7 @@ import SmallBarChart from '../../components/SmallBarChart/SmallBarChart.jsx';
 import zoom from '../../../public/zoom.svg';
 import close from '../../../public/close.svg';
 
-function Agente_dashboards() {
+function Agente_Dashboards() {
    const [usuario, setUsuario] = useState(null);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState(null);
@@ -173,12 +173,12 @@ function Agente_dashboards() {
             <Sidenav/>
             <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />}
                items={[
-                  { label: 'Home', href: '/Agente_home' },
-                  { label: 'Relatórios', href: '/Agente_dashboards' }]
+                  { label: 'Home', href: '/agente/home' },
+                  { label: 'Relatórios', href: '/agente/dashboards' }]
                }
             />
             <NavBar items={[ 
-               { label: 'Home', href: '/agente_home', icon: HomeAddress },
+               { label: 'Home', href: '/agente/home', icon: HomeAddress },
                { label: 'Perfil', href: '/agente_perfil', icon: UserManagerIcon },
                { label: 'Visitas', href: '/agente_hist-visitas', icon: query },
                { label: 'Dash', href: '/agente_dashboards', icon: dashIcon }
@@ -267,4 +267,4 @@ function Agente_dashboards() {
    )
 }
 
-export default Agente_dashboards;
+export default Agente_Dashboards;

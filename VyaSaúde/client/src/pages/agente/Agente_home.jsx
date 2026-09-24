@@ -15,7 +15,7 @@ import query from '../../components/Sidenav/iconsSideBar/query.png';
 import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
 import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
 
-function Agente_home() {
+function Agente_Home() {
    const usuario = getUser();
    
    return(
@@ -25,12 +25,12 @@ function Agente_home() {
          {/* <ButtonAjuda/> */}
          <Breadcrumb homeIcon={<img src={HomeAddress} alt="Home" className="breadcrumb-home-icon" />} items={[{ label: 'Home', href: '' }]} />
          <NavBar items={[
-            { label: 'Home', href: '/agente_home', icon: HomeAddress },
-            { label: 'Pacientes', href: '/Agente_home-usuario', icon: AddUserMale },
-            { label: 'Agenda', href: '/Agente_hist-visitas', icon: query },
-            { label: 'Dash', href: '/Agente_dashboards', icon: dashIcon }
+            { label: 'Home', href: '/agente/home', icon: HomeAddress },
+            { label: 'Pacientes', href: '/agente/paciente', icon: AddUserMale },
+            { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
+            { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
-         <main className="content-home">
+         <main className="content-home agente">
             <div className="title_Home">
                <img src={more} id="logoMore"/><br /><br />
                <h2><b>Olá, {usuario.nome}!</b></h2>
@@ -42,57 +42,52 @@ function Agente_home() {
             </div>
 
             <div className="gridBoxOtherOptions">
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={AddUserMale}
-                     title="Cadastro de Pacientes"
-                     description="Cadastre ou altere informações de pacientes na plataforma"
-                     linkTo="/Agente_home-usuario"
-                     buttonText="Acessar pacientes"
-                  />
-                  <BoxSimpleInfos
-                     icon={query}
-                     title="Agenda de Visitas"
-                     description="Verifique as datas das últimas visitas realizadas e as próximas visitas agendadas"
-                     linkTo="/Agente_hist-visitas"
-                     buttonText="Acessar agenda"
-                  />
-                  <BoxSimpleInfos
-                     icon={UserManagerIcon}
-                     title="Meu Perfil"
-                     description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
-                     linkTo="/Agente_perfil"
-                     buttonText="Visualizar perfil"
-                  />
-               </div>
-
-               <div className="gridBoxOptions_lines">
-                  <BoxSimpleInfos
-                     icon={HomeAddress}
-                     title="Cadastro de Endereços"
-                     description="Cadastre ou altere informações de endereços na plataforma"
-                     linkTo="/Agente_home-endereco"
-                     buttonText="Acessar endereços"
-                  />
-                  <BoxSimpleInfos
-                     icon={query}
-                     title="Histórico de Consultas"
-                     description="Área para visualizar o histórico de consultas, assim como consultas futuras"
-                     linkTo="/Agente_hist-consultas"
-                     buttonText="Acessar consultas"
-                  />
-                  <BoxSimpleInfos
-                     icon={dashIcon}
-                     title="Área de Dashboards"
-                     description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
-                     linkTo="/Agente_dashboards"
-                     buttonText="Ir para Dashboards"
-                  />
-               </div>
+               <BoxSimpleInfos
+                  icon={AddUserMale}
+                  title="Cadastro de Pacientes"
+                  description="Cadastre ou altere informações de pacientes na plataforma"
+                  linkTo="/agente/paciente"
+                  buttonText="Acessar pacientes"
+               />
+               <BoxSimpleInfos
+                  icon={query}
+                  title="Agenda de Visitas"
+                  description="Verifique as datas das últimas visitas realizadas e as próximas visitas agendadas"
+                  linkTo="/agente/historico-visitas"
+                  buttonText="Acessar agenda"
+               />
+               <BoxSimpleInfos
+                  icon={UserManagerIcon}
+                  title="Meu Perfil"
+                  description="Verifique, edite e atualize suas informações pessoais (nome, endereço, telefone e email)"
+                  linkTo="/agente/perfil"
+                  buttonText="Visualizar perfil"
+               />
+               <BoxSimpleInfos
+                  icon={HomeAddress}
+                  title="Cadastro de Endereços"
+                  description="Cadastre ou altere informações de endereços na plataforma"
+                  linkTo="/agente/endereco"
+                  buttonText="Acessar endereços"
+               />
+               <BoxSimpleInfos
+                  icon={query}
+                  title="Histórico de Consultas"
+                  description="Área para visualizar o histórico de consultas, assim como consultas futuras"
+                  linkTo="/agente/historico-consultas"
+                  buttonText="Acessar consultas"
+               />
+               <BoxSimpleInfos
+                  icon={dashIcon}
+                  title="Área de Dashboards"
+                  description="Visualize, altere e faça análises com nossos dashboards personalizados para melhor monitorar a saúde da sua região"
+                  linkTo="/agente/dashboards"
+                  buttonText="Ir para Dashboards"
+               />
             </div>
          </main>
       </div>
    )
 }
 
-export default Agente_home;
+export default Agente_Home;
