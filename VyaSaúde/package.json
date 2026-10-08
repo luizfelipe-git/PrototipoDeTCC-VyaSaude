@@ -1,18 +1,19 @@
 {
   "name": "vyasaude",
   "private": true,
-  "version": "4.13.4",
+  "version": "4.20.0",
   "description": "Front-end do Projeto de TCC",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "start": "bun i && bun audit fix && code . && start cmder /m && bun run dev",
     "dev:local": "cross-env NODE_ENV=local nodemon --env-file=.env.local -r dotenv/config src/index.js",
     "dev:cloud": "cross-env NODE_ENV=production nodemon --env-file=.env.prod -r dotenv/config src/index.js",
-    "postinstall": "cd api && npm install"
+    "postinstall": "cd api && npm install",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint client/src"
   },
   "author": "luizfelipe-git",
   "license": "MIT",
@@ -39,15 +40,16 @@
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
+    "@eslint/js": "^9.39.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^5.0.0",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "typescript": "^7.0.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "typescript": "6",
+    "typescript-eslint": "^8.71.1",
     "vite": "^7.1.2"
   }
 }
