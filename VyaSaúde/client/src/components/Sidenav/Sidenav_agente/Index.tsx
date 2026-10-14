@@ -1,5 +1,3 @@
-import '../../Sidenav/Index.css';
-// import "./Index.css";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";

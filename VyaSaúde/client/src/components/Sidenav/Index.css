@@ -1,4 +1,4 @@
-/* Mobile - max-width: 764px */
+/* Mobile - max-width: 887px */
 @media (max-width: 887px) {
    .sidenav {
       display: none;
@@ -75,7 +75,7 @@
    }
 }
 
-/* Tablet - 765px to 1519px */
+/* Tablet - 888px to 1519px */
 @media (min-width: 888px) and (max-width: 1519px) {
    .sidenav {
       display: flex;

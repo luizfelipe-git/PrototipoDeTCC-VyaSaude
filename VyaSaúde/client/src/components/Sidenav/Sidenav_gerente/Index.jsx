@@ -1,4 +1,3 @@
-import '../../Sidenav/Index.css';
 import { Link } from "react-router-dom";
 
 import UserManagerIcon from '../iconsSideBar/UserManagerIcon.png';
@@ -16,7 +15,7 @@ import home            from '../iconsSideBar/Home.png';
 // Perfil
 // Dashboards
 
-function Sidenav() {
+export function SidenavGerente() {
    return (
       <aside className="sidenav">
          <div className="sidenav-content">
@@ -81,5 +80,3 @@ function Sidenav() {
       </aside>
    )
 };
-
-export default Sidenav;
