@@ -1,5 +1,6 @@
 .boxSimpleInfos {
-   width:370px;
+   width:350px;
+   height: 235px;
 
    /* border: solid 3px #000000; */
    /* border-bottom: solid 5px #000000; */
@@ -57,7 +58,11 @@
    display: flex;
    justify-content: flex-end;
    width: 100%;
-   padding: 0 15px 15px 0;
+   position: absolute;
+   padding-bottom: 15px;
+   padding-right: 15px;
+   bottom: 0;
+   right: 0;
 }
 
 .boxSimpleInfos .buttonLine .buttonB {

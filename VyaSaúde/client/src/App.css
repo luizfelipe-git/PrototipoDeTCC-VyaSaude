@@ -13,11 +13,11 @@
 }
 
 body {
-   height: 100vh;
+   height: 100dvh;
 }
 
 html {
-   height: 100vh;
+   height: 100dvh;
    user-select: none;
 }
 
@@ -34,7 +34,7 @@ input[type=number] { /* Remover setas dos inputs(Firefox) */
 
 input, select{
    height: 40px;
-   margin: 0.8vh;
+   margin: 0.8dvh;
    box-shadow: 2px 2px 10px 1px #c7c7c7a6 !important;
    border: solid #cfcfcf 1px !important;
 }
@@ -46,7 +46,7 @@ button {
 .title_Home {
    justify-content: center;
    text-align: center;
-   padding: 5vh 2vh;
+   padding: 1dvh 0;
    width: 100%;
    flex-shrink: 0;
 }
@@ -59,7 +59,7 @@ button {
    display: flex;
    text-align: center;
    align-items: center;
-   padding: 3vh 0;
+   padding: 3dvh 0;
    width: 100%;
    
    svg {
@@ -99,19 +99,6 @@ button {
    grid-template-rows: repeat(2, auto) !important;  /* 2 linhas */
 }
 
-.gridBoxOtherOptions {
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-   flex: 1;
-   overflow-y: auto;
-   
-   .gridBoxOptions_lines {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-   };
-}
 
 .simpleBoxShadow {
    background-color: #ffffff;
@@ -213,6 +200,7 @@ button {
    height: calc(100vh - 10vh);
    display: flex;
    flex-direction: column;
+   min-width: 380px;
 }
 
 .layout {
@@ -233,7 +221,7 @@ button {
    gap: 50px;
 
    width: 80%;
-   margin: 2vw;
+   margin: 2dvw;
    /* margin: 2vw; */
    /* padding: 5vw; */
    max-width: 1000px;
@@ -286,70 +274,161 @@ button {
    flex-direction: column;
 }
 
-@media (max-width: 887px) {
+@media (max-width: 739px) {
    .content-home {
       width: 99.99%;
       margin-left: 0;
-      margin-top: 10vh;
+      margin-top: 10dvh;
    }
    .content-pages {
       width: 99.99%;
       margin-left: 0;
       padding: 16px;
    }
-   .gridBoxOtherOptions .gridBoxOptions_lines {
+
+   .gridBoxOtherOptions {
       flex-direction: column;
       align-items: center;
+      display: grid;
+      justify-items: center;
+      width: 100dvw;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 10px 3% 30px;
    }
 
    .paginacao {
       bottom: 92px !important;
-      width: 100vw;
+      width: 100dvw;
       left: 0px;
    }
 }
 
-@media (min-width: 888px) and (max-width: 1519px) {
+@media (min-width: 740px) and (max-width: 887px) {
    .content-home {
-      width: 92.7%;
-      margin-left: 90px;
-      margin-top: 10vh;
+      width: 100dvw;
+      margin-left: 0;
+      margin-top: 10dvh;
+      overflow-y: auto;
    }
    .content-pages {
-      width: calc(100vw - 90); /* 180 -> 100 */
-      margin-left: 90px;
-      padding: 24px;
+      width: 99.99%;
+      margin-left: 0;
+      padding: 16px;
    }
+
    .gridBoxOtherOptions {
-      align-items: center;
-   }
-   .gridBoxOtherOptions .gridBoxOptions_lines {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-      max-width: none;
+      width: 100dvw;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      column-gap: 10px;
+      padding: 10px 1% 30px;
    }
 
    .paginacao {
-      width: calc(100vw - 90px);
+      bottom: 92px !important;
+      width: 100dvw;
+      left: 0px;
+   }
+}
+
+
+@media (min-width: 888px) and (max-width: 1249px) {
+   /* .admin {
+      background-color: red;
+   }
+   .agente {
+      background-color: red;
+   }
+   .gerente {
+      background-color: red;
+   }
+   .paciente {
+      background-color: red;
+   }
+   .recepcao {
+      background-color: red;
+   } */
+
+   .content-home {
+      width: calc(100dvw - 90px);
+      margin-left: 90px;
+      margin-top: 10dvh;
+   }
+   .content-pages {
+      width: calc(100dvw - 90px); /* 180 -> 100 */
+      margin-left: 90px;
+      padding: 24px;
+   }
+
+   .gridBoxOtherOptions {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+      padding: 10px 3% 30px;
+   }
+
+   .paginacao {
+      width: calc(100dvw - 90px);
       left: 90px;
    }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1250px) and (max-width: 1499px) {
    .content-home {
-      width: calc(100vw - 317px);
+      width: calc(100dvw - 90px);
+      margin-left: 90px;
+      margin-top: 10dvh;
+   }
+   .content-pages {
+      width: calc(100dvw - 90px); /* 180 -> 100 */
+      margin-left: 90px;
+      padding: 24px;
+   }
+
+   .gridBoxOtherOptions {
+      display: grid;
+      justify-items: center;
+      width: 100%;
+      padding: 0 2%;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+   }
+
+   .paginacao {
+      width: calc(100dvw - 90px);
+      left: 90px;
+   }
+}
+
+@media (min-width: 1500px) {
+   .content-home {
+      width: calc(100dvw - 300px);
       margin-left: 300px;
       margin-top: 10vh;
    }
    .content-pages {
-      width: calc(100vw - 300px); /* 340 -> 300 */ 
+      width: calc(100dvw - 300px); /* 340 -> 300 */ 
       margin-left: 300px;
       padding: 40px;
    }
 
+   .gridBoxOtherOptions {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 3%;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+   }
+
    .paginacao {
-      width: calc(100vw - 300px);
+      width: calc(100dvw - 300px);
       left: 300px;
    }
 }
