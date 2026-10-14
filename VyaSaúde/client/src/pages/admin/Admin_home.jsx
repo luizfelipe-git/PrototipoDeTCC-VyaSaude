@@ -2,9 +2,9 @@ import "./Admin.css";
 import Header from "../../components/Header/Index.jsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx"
-import { getUser } from "../../helpers/auth.js";
+import { getUser } from "../../helpers/auth.ts";
 
 import more from '../../components/Sidenav/iconsSideBar/more.png';
 import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';

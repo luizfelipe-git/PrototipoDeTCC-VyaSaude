@@ -1,9 +1,9 @@
 import "../../App.css";
 import "./Agente.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import api from "../../services/api.js";
-import { getUser } from "../../helpers/auth.js";
+import { getUser } from "../../helpers/auth.ts";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField } from "@mui/material";

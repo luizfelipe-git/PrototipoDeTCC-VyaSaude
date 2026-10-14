@@ -1,5 +1,5 @@
 import './Index.css';
-import { getUser } from '../../helpers/auth.js';
+import { getUser } from '../../helpers/auth.ts';
 import { useNavigate } from 'react-router-dom';
 import { useCallback, useEffect, useState } from 'react';
 import logo from "../../../public/logo.svg";

@@ -1,6 +1,6 @@
 import "./Admin.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import api from '../../services/api.js';
 import cboData from '../../data/cbo2002_KeyedJson.json';
 import { useNavigate  } from "react-router-dom";

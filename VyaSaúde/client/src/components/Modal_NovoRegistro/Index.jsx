@@ -4,7 +4,7 @@ import { TextField, Select, MenuItem, FormControl, InputLabel } from "@mui/mater
 import { PatternFormat } from 'react-number-format';
 import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import { getUser } from "../../helpers/auth.js";
+import { getUser } from "../../helpers/auth.ts";
 
 import { GoX } from "react-icons/go";
 

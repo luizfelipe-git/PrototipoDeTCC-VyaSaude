@@ -1,6 +1,6 @@
 import "./Agente.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import api from '../../services/api.js';
 import { useNavigate  } from "react-router-dom";
 import { useState, useEffect } from "react";

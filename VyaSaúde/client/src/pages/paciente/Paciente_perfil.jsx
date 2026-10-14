@@ -1,7 +1,7 @@
 
 import "./Paciente.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_paciente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
@@ -9,7 +9,7 @@ import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIc
 import query from '../../components/Sidenav/iconsSideBar/query.png';
 import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
 import api from '../../services/api.js';
-import { getUser } from "../../helpers/auth.js";
+import { getUser } from "../../helpers/auth.ts";
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { TextField } from '@mui/material';

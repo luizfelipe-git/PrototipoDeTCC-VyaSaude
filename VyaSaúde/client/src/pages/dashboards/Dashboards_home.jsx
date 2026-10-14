@@ -1,6 +1,6 @@
 import "./Agente.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_agente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 
 function Dashboards_home() {
    return(

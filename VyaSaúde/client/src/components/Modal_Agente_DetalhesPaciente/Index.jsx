@@ -1,6 +1,6 @@
 import "./Modal_Agente_DetalhesPaciente.css";
 import api from '../../services/api.js';
-import { getUser } from "../../helpers/auth.js";
+import { getUser } from "../../helpers/auth.ts";
 import { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { TextField } from '@mui/material'

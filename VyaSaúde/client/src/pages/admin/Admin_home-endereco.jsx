@@ -1,6 +1,6 @@
 import "./Admin.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import { Link  } from "react-router-dom";
 
 function Admin_homeUsuario() {

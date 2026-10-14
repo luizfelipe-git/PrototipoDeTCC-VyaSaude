@@ -8,7 +8,7 @@ import { TextField, InputAdornment, IconButton } from "@mui/material";
 
 
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_admin/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
 import NavBar from "../../components/NavBar/Index.jsx";
 import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';

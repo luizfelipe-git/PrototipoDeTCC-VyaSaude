@@ -1,6 +1,6 @@
 import "./Gerente.css";
 import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Sidenav_gerente/Index.jsx";
+import Sidenav from "../../components/Sidenav/Index.tsx";
 import { Link } from "react-router-dom";
 
 function Gerente_homeEndereco() {
