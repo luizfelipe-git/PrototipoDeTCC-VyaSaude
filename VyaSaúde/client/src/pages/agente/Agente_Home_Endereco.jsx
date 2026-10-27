@@ -29,7 +29,7 @@ function Agente_Home_Endereco() {
             </Link>
 
             <div className="title_Home">
-               <h1><b>Cadastro de Endereços</b></h1>
+               <h1><b>Gerenciamento de Endereços</b></h1>
             </div>
 
             <div className="simpleBoxShadow">
