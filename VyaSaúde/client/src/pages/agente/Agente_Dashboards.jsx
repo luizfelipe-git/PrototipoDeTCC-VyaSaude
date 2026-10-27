@@ -1,17 +1,17 @@
 import "./Agente_dashboards.css";
-import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Index.tsx";
+import Header from "@components/Header/Index.jsx";
+import Sidenav from "@components/Sidenav/Index.tsx";
 import { Link } from "react-router-dom";
-import ButtonBack from "../../components/ButtonBack/Index.jsx";
-import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
-import NavBar from "../../components/NavBar/Index.jsx";
+import ButtonBack from "@components/ButtonBack/Index.jsx";
+import Breadcrumb from "@components/Breadcrumb/Index.jsx";
+import NavBar from "@components/NavBar/Index.jsx";
 import { useEffect, useState } from 'react';
-import api from '../../services/api.js';
-import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
-import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
-import query from '../../components/Sidenav/iconsSideBar/query.png';
-import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
-import SmallBarChart from '../../components/SmallBarChart/SmallBarChart.jsx';
+import api from '@services/api.js';
+import HomeAddress from '@components/Sidenav/iconsSideBar/HomeAddress.png';
+import UserManagerIcon from '@components/Sidenav/iconsSideBar/UserManagerIcon.png';
+import query from '@components/Sidenav/iconsSideBar/query.png';
+import dashIcon from '@components/Sidenav/iconsSideBar/dashIcon.png';
+import SmallBarChart from '@components/SmallBarChart/SmallBarChart.jsx';
 import zoom from '@icons/zoom.svg';
 import close from '@icons/close.svg';
 

@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import { getUser } from '../../helpers/auth.ts';
+import { getUser } from "@helpers/auth.ts";
 import { useNavigate } from 'react-router-dom';
 import { useCallback, useEffect, useState } from 'react';
 import logo from "@icons/logo.svg";
