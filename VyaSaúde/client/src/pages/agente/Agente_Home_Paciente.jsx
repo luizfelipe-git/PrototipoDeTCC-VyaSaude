@@ -41,6 +41,7 @@ function Agente_Home_Paciente() {
                   <Link to='/agente/alterar-paciente'><div className="shortcutClick"><p>Alterar usuários</p></div></Link>
                </div>
             </div>
+            <div></div>
          </main>
       </div>
    )
