@@ -15,6 +15,7 @@ export default defineConfig({
 			"@pages": path.resolve(import.meta.dirname, "client/src/pages"),
 			"@services": path.resolve(import.meta.dirname, "client/src/services"),
 			"@components": path.resolve(import.meta.dirname, "client/src/components"),
+			"@icons": path.resolve(import.meta.dirname, "client/public/icons"),
 		},
 	},
 	css: {

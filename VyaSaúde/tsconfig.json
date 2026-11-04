@@ -14,7 +14,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "@icons/*": ["client/public/icons/*"]
+    }
   },
   "include": ["client/src"]
 }
