@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import "@fontsource/inter";
 import './styles/main.scss'
 
 import { StrictMode } from 'react';
