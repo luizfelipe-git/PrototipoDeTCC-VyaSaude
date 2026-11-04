@@ -1,8 +1,9 @@
 {
   "name": "vyasaude",
   "private": true,
-  "version": "4.21.1",
+  "version": "4.22.0",
   "description": "Front-end do Projeto de TCC",
+  "packageManager": "pnpm@12.16.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +12,6 @@
     "start": "bun i && bun audit fix && code . && start cmder /m && bun run dev",
     "dev:local": "cross-env NODE_ENV=local nodemon --env-file=.env.local -r dotenv/config src/index.js",
     "dev:cloud": "cross-env NODE_ENV=production nodemon --env-file=.env.prod -r dotenv/config src/index.js",
-    "postinstall": "cd api && npm install",
     "tsc": "tsc --noEmit",
     "lint": "eslint client/src"
   },
@@ -38,7 +38,9 @@
     "react-icons": "^5.7.0",
     "react-number-format": "^5.4.4",
     "react-router-dom": "^7.8.2",
-    "react-toastify": "^11.0.5"
+    "react-toastify": "^11.0.5",
+    "rollup-plugin-visualizer": "^7.1.1",
+    "sass": "^1.107.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
