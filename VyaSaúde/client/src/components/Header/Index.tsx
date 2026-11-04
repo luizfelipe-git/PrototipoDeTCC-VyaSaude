@@ -2,8 +2,8 @@ import styles from "./Header.module.scss";
 import { getUser } from '../../helpers/auth.ts';
 import { useNavigate } from 'react-router-dom';
 import { useCallback, useEffect, useState } from 'react';
-import logo from "../../../public/icons/logo.svg";
-import placeholder from "../../../public/icons/placeholder.png";
+import logo from "@icons/logo.svg";
+import placeholder from "@icons/placeholder.png";
 import { IoMdExit } from "react-icons/io";
 
 interface Usuario {
