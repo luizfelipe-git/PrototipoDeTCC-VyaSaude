@@ -1,8 +1,7 @@
 import "./Agente.css";
 import Header from "@components/Header/Index.jsx";
 import Sidenav from "@components/Sidenav/Index.tsx";
-// import PageWIP from "../../components/PageWIP/Index.jsx";
-import ButtonBack from "../../components/ButtonBack/Index.jsx";
+import PageTitle from "@components/PageTitle/Index.tsx";
 import { Link  } from "react-router-dom";
 import Breadcrumb from "@components/Breadcrumb/Index.jsx";
 import NavBar from "@components/NavBar/Index.jsx";
@@ -23,14 +22,8 @@ function Agente_Home_Endereco() {
             { label: 'Agenda', href: '/agente/historico-visitas', icon: query },
             { label: 'Dash', href: '/agente/dashboards', icon: dashIcon }
          ]} />
-         <main className="content-home" style={{position: "relative"}}>
-            <Link to="/Agente_home" className="backButton">
-               <ButtonBack />
-            </Link>
-
-            <div className="title_Home">
-               <h1><b>Gerenciamento de Endereços</b></h1>
-            </div>
+         <main className="content-home content-pages-home">
+            <PageTitle title="Gerenciamento de Endereços" />
 
             <div className="simpleBoxShadow">
                <h4>Selecione uma das opções abaixo</h4> <br />
