@@ -44,7 +44,7 @@ function Agente_Home() {
             <div className="gridBoxOtherOptions">
                <BoxSimpleInfos
                   icon={AddUserMale}
-                  title="Cadastro de Pacientes"
+                  title="Gerenciar Pacientes"
                   description="Cadastre ou altere informações de pacientes na plataforma"
                   linkTo="/agente/paciente"
                   buttonText="Acessar pacientes"
@@ -65,7 +65,7 @@ function Agente_Home() {
                />
                <BoxSimpleInfos
                   icon={HomeAddress}
-                  title="Cadastro de Endereços"
+                  title="Gerenciar Endereços"
                   description="Cadastre ou altere informações de endereços na plataforma"
                   linkTo="/agente/endereco"
                   buttonText="Acessar endereços"
