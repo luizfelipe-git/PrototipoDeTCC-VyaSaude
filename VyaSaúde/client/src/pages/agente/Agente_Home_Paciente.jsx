@@ -30,10 +30,11 @@ function Agente_Home_Paciente() {
                <h4>Selecione uma das opções abaixo</h4><br />
 
                <div className="shortcutField paciente-home">
-                  <Link to='/agente/cadastrar-paciente'><div className="shortcutClick"><p>Cadastrar novo usuário</p></div></Link>
-                  <Link to='/agente/alterar-paciente'><div className="shortcutClick"><p>Alterar usuários</p></div></Link>
+                  <Link to='/agente/cadastrar-paciente'><div className="shortcutClick"><p>Cadastrar novo paciente</p></div></Link>
+                  <Link to='/agente/alterar-paciente'><div className="shortcutClick"><p>Alterar pacientes</p></div></Link>
                </div>
             </div>
+            <div></div>
          </main>
       </div>
    )
