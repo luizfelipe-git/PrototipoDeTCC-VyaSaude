@@ -1,22 +1,22 @@
 import "./Agente.css";
-import api from '../../services/api.js';
+import api from '@services/api.js';
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Button } from 'react-bootstrap';
 import { PatternFormat } from "react-number-format";
 import { TextField, InputAdornment, IconButton, Pagination, Stack } from "@mui/material";
 
-import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Index.tsx";
-import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
-import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
-import query from '../../components/Sidenav/iconsSideBar/query.png';
-import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
+import Header from "@components/Header/Index.jsx";
+import Sidenav from "@components/Sidenav/Index.tsx";
+import Breadcrumb from "@components/Breadcrumb/Index.jsx";
+import NavBar from "@components/NavBar/Index.jsx";
+import HomeAddress from '@components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '@components/Sidenav/iconsSideBar/AddUserMale.png';
+import query from '@components/Sidenav/iconsSideBar/query.png';
+import dashIcon from '@components/Sidenav/iconsSideBar/dashIcon.png';
 
-import Modal_NovoRegistro from "../../components/Modal_NovoRegistro/Index.jsx";
-import Modal_DetalhesRegistro from "../../components/Modal_DetalhesRegistro/Index.jsx";
+import Modal_NovoRegistro from "@components/Modal_NovoRegistro/Index.jsx";
+import Modal_DetalhesRegistro from "@components/Modal_DetalhesRegistro/Index.jsx";
 
 import { GoReply } from "react-icons/go";
 import { MdContentPasteSearch } from "react-icons/md";

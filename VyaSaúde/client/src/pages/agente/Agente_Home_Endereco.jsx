@@ -1,15 +1,15 @@
 import "./Agente.css";
-import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Index.tsx";
+import Header from "@components/Header/Index.jsx";
+import Sidenav from "@components/Sidenav/Index.tsx";
 // import PageWIP from "../../components/PageWIP/Index.jsx";
 import ButtonBack from "../../components/ButtonBack/Index.jsx";
 import { Link  } from "react-router-dom";
-import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
-import NavBar from "../../components/NavBar/Index.jsx";
-import HomeAddress from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
-import AddUserMale from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
-import query from '../../components/Sidenav/iconsSideBar/query.png';
-import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
+import Breadcrumb from "@components/Breadcrumb/Index.jsx";
+import NavBar from "@components/NavBar/Index.jsx";
+import HomeAddress from '@components/Sidenav/iconsSideBar/HomeAddress.png';
+import AddUserMale from '@components/Sidenav/iconsSideBar/AddUserMale.png';
+import query from '@components/Sidenav/iconsSideBar/query.png';
+import dashIcon from '@components/Sidenav/iconsSideBar/dashIcon.png';
 
 function Agente_Home_Endereco() {
    return(
@@ -29,7 +29,7 @@ function Agente_Home_Endereco() {
             </Link>
 
             <div className="title_Home">
-               <h1><b>Cadastro de Endereços</b></h1>
+               <h1><b>Gerenciamento de Endereços</b></h1>
             </div>
 
             <div className="simpleBoxShadow">

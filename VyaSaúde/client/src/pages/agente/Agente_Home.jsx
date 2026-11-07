@@ -1,19 +1,19 @@
 import "./Agente.css";
-import Header from "../../components/Header/Index.jsx";
-import Sidenav from "../../components/Sidenav/Index.tsx";
-// import ButtonAjuda from "../../components/ButtonAjuda/Index.jsx";
-import { getUser } from "../../helpers/auth.ts";
+import Header from "@components/Header/Index.jsx";
+import Sidenav from "@components/Sidenav/Index.tsx";
+// import ButtonAjuda from "@components/ButtonAjuda/Index.jsx";
+import { getUser } from "@helpers/auth.ts";
 
-import Breadcrumb from "../../components/Breadcrumb/Index.jsx";
-import NavBar from "../../components/NavBar/Index.jsx";
-import BoxSimpleInfos from "../../components/BoxSimpleInfos/Index.jsx";
+import Breadcrumb from "@components/Breadcrumb/Index.jsx";
+import NavBar from "@components/NavBar/Index.jsx";
+import BoxSimpleInfos from "@components/BoxSimpleInfos/Index.jsx";
 
-import more from '../../components/Sidenav/iconsSideBar/more.png';
-import AddUserMale     from '../../components/Sidenav/iconsSideBar/AddUserMale.png';
-import dashIcon from '../../components/Sidenav/iconsSideBar/dashIcon.png';
-import query from '../../components/Sidenav/iconsSideBar/query.png';
-import UserManagerIcon from '../../components/Sidenav/iconsSideBar/UserManagerIcon.png';
-import HomeAddress     from '../../components/Sidenav/iconsSideBar/HomeAddress.png';
+import more from '@components/Sidenav/iconsSideBar/more.png';
+import AddUserMale     from '@components/Sidenav/iconsSideBar/AddUserMale.png';
+import dashIcon from '@components/Sidenav/iconsSideBar/dashIcon.png';
+import query from '@components/Sidenav/iconsSideBar/query.png';
+import UserManagerIcon from '@components/Sidenav/iconsSideBar/UserManagerIcon.png';
+import HomeAddress     from '@components/Sidenav/iconsSideBar/HomeAddress.png';
 
 function Agente_Home() {
    const usuario = getUser();
